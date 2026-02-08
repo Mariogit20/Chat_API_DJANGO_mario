@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chat (Django + Channels)</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 760px; margin: 24px auto; padding: 0 12px; }
+    label { display:block; margin: 10px 0 6px; }
+    input, button { font-size: 16px; padding: 8px 10px; }
+    input { width: 100%; box-sizing: border-box; }
+    #row { display:flex; gap: 8px; align-items: center; }
+    #row input { flex: 1; }
+    pre { background:#f6f6f6; padding: 12px; border-radius: 10px; overflow:auto; min-height: 260px; }
+    small { color:#444; }
+  </style>
+</head>
+<body>
+  <h1>Chat</h1>
+
+  <label>Room</label>
+  <input id="room" value="general" />
+
+  <label>Author</label>
+  <input id="author" value="Mario" />
+
+  <div style="margin: 14px 0;">
+    <button id="connect">Se connecter</button>
+    <button id="disconnect" disabled>Se déconnecter</button>
+    <small id="status" style="margin-left:10px;">offline</small>
+  </div>
+
+  <div id="row">
+    <input id="msg" placeholder="message..." />
+    <button id="send" disabled>Envoyer</button>
+  </div>
+
+  <h3>Logs</h3>
+  <pre id="log"></pre>
+
+  <script>
+    const logEl = document.getElementById("log");
+    const statusEl = document.getElementById("status");
+    const log = (t) => (logEl.textContent += t + "\n");
+
+    let ws = null;
+
+    function buildWsUrl(room) {
+      // IMPORTANT: si la page est servie depuis Live Server (5500),
+      // window.location.host = "127.0.0.1:5500" -> il faut FORCER le port 8000 (Django).
+      const scheme = (window.location.protocol === "https:") ? "wss" : "ws";
+      const host = window.location.hostname; // 127.0.0.1
+      const port = 8000; // port Django
+      return `${scheme}://${host}:${port}/ws/chat/${encodeURIComponent(room)}/`;
+    }
+
+    function connect() {
+      const room = document.getElementById("room").value.trim();
+      const author = document.getElementById("author").value.trim();
+
+      if (!room) { log("⚠️ Room vide"); return; }
+      if (!author) { log("⚠️ Author vide"); return; }
+
+      const url = buildWsUrl(room);
+      log(`🔌 ${url}`);
+
+      ws = new WebSocket(url);
+
+      ws.onopen = () => {
+        statusEl.textContent = "online";
+        document.getElementById("send").disabled = false;
+        document.getElementById("disconnect").disabled = false;
+        document.getElementById("connect").disabled = true;
+        log("✅ WS connecté");
+      };
+
+      ws.onmessage = (e) => log("📩 " + e.data);
+
+      ws.onerror = () => log("⚠️ WS erreur");
+
+      ws.onclose = (e) => {
+        statusEl.textContent = "offline";
+        document.getElementById("send").disabled = true;
+        document.getElementById("disconnect").disabled = true;
+        document.getElementById("connect").disabled = false;
+        log(`❌ WS fermé (code=${e.code})`);
+      };
+    }
+
+    function disconnect() {
+      if (ws) ws.close(1000, "client disconnect");
+      ws = null;
+    }
+
+    function sendMsg() {
+      const author = document.getElementById("author").value.trim();
+      const content = document.getElementById("msg").value;
+
+      if (!ws || ws.readyState !== WebSocket.OPEN) {
+        log("⚠️ Pas connecté (message non envoyé)");
+        return;
+      }
+
+      ws.send(JSON.stringify({ author, content }));
+      document.getElementById("msg").value = "";
+      document.getElementById("msg").focus();
+    }
+
+    document.getElementById("connect").onclick = connect;
+    document.getElementById("disconnect").onclick = disconnect;
+    document.getElementById("send").onclick = sendMsg;
+
+    document.getElementById("msg").addEventListener("keydown", (e) => {
+      if (e.key === "Enter") sendMsg();
+    });
+  </script>
+</body>
+</html>

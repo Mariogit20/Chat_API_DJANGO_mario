@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chat (Django + Channels)</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 24px; }
+    .row { display: flex; gap: 8px; flex-wrap: wrap; }
+    input, button { padding: 10px 12px; font-size: 14px; }
+    input { min-width: 220px; }
+    pre { background: #f5f5f5; padding: 12px; border-radius: 8px; overflow: auto; }
+    .badge { display:inline-block; padding: 2px 8px; border-radius: 999px; background:#eee; }
+  </style>
+</head>
+<body>
+  <h1>Chat</h1>
+
+  <div class="row">
+    <label>Room:
+      <input id="room" value="general" />
+    </label>
+
+    <label>Author:
+      <input id="author" value="Mario" />
+    </label>
+
+    <span class="badge" id="status">offline</span>
+  </div>
+
+  <div class="row" style="margin-top: 12px;">
+    <input id="msg" placeholder="message..." />
+    <button id="send">Envoyer</button>
+    <button id="reconnect">Reconnect</button>
+  </div>
+
+  <pre id="log" style="margin-top: 12px; height: 360px;"></pre>
+
+  <script>
+    const elLog = document.getElementById("log");
+    const elStatus = document.getElementById("status");
+
+    const log = (t) => {
+      elLog.textContent += t + "\n";
+      elLog.scrollTop = elLog.scrollHeight;
+    };
+
+    let ws = null;
+    let reconnectDelayMs = 500;
+    let reconnectTimer = null;
+
+    const setStatus = (s) => {
+      elStatus.textContent = s;
+    };
+
+    function wsUrl() {
+      const room = document.getElementById("room").value.trim() || "general";
+      const proto = (location.protocol === "https:") ? "wss" : "ws";
+      return `${proto}://${location.host}/ws/chat/${encodeURIComponent(room)}/`;
+    }
+
+    function connect() {
+      if (reconnectTimer) {
+        clearTimeout(reconnectTimer);
+        reconnectTimer = null;
+      }
+
+      if (ws && (ws.readyState === WebSocket.OPEN || ws.readyState === WebSocket.CONNECTING)) {
+        return;
+      }
+
+      setStatus("connecting");
+      const url = wsUrl();
+      log("🔌 " + url);
+
+      ws = new WebSocket(url);
+
+      ws.onopen = () => {
+        reconnectDelayMs = 500;
+        setStatus("online");
+        log("✅ WS connecté");
+      };
+
+      ws.onmessage = (e) => {
+        log("📩 " + e.data);
+      };
+
+      ws.onerror = () => {
+        log("⚠️ WS erreur");
+      };
+
+      ws.onclose = () => {
+        setStatus("offline");
+        log("❌ WS fermé");
+
+        // Auto-reconnect (useful if the dev server restarts)
+        reconnectTimer = setTimeout(() => {
+          reconnectDelayMs = Math.min(8000, reconnectDelayMs * 2);
+          connect();
+        }, reconnectDelayMs);
+      };
+    }
+
+    function sendMsg() {
+      if (!ws || ws.readyState !== WebSocket.OPEN) {
+        log("⚠️ Pas connecté (message non envoyé)");
+        return;
+      }
+      const author = document.getElementById("author").value.trim() || "anonymous";
+      const content = document.getElementById("msg").value;
+      ws.send(JSON.stringify({ author, content }));
+      document.getElementById("msg").value = "";
+    }
+
+    document.getElementById("send").onclick = sendMsg;
+    document.getElementById("msg").addEventListener("keydown", (e) => {
+      if (e.key === "Enter") sendMsg();
+    });
+
+    document.getElementById("reconnect").onclick = () => {
+      try { ws && ws.close(); } catch(e) {}
+      connect();
+    };
+
+    // Start
+    connect();
+  </script>
+</body>
+</html>

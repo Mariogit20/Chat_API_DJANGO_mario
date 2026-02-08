@@ -1,0 +1,103 @@
+Dans VISUAL STUDIO CODE (VSCode) pour """""faire APPARAITRE""""" le TERMINAL de DJANGO :      CTRL J
+
+OBJECTIF :     Si on voudrais    """""CREER   le DOSSIER     venv"""""   A PARTIR du FICHIER    """""requirements.txt"""""    CONTENANT """""TOUS LES MODULES""""" utiisés dans ce """""projet DJANGO"""""    concernant la réalisation d'une    """""API de CHAT en DJANGO côté BACKEND"""""    alors dans le """""TERMINAL de DJANGO""""" on saisit :
+pip install -r requirements.txt
+
+OBJECTIF :     Si on voudrais    """""CREER   le FICHIER     requirements.txt"""""   A PARTIR du DOSSIER    """""venv"""""        alors dans le """""TERMINAL de DJANGO""""" on saisit :
+pip freeze > requirements.txt
+
+(venv) PS D:\PYTHON DJANGO HOPES\Chat_API_DJANGO_mario> pip freeze > requirements.txt
+(venv) PS D:\PYTHON DJANGO HOPES\Chat_API_DJANGO_mario> pip freeze > requirements.txt
+(venv) PS D:\PYTHON DJANGO HOPES\Chat_API_DJANGO_mario> pip freeze > requirements.txt
+(venv) PS D:\PYTHON DJANGO HOPES\Chat_API_DJANGO_mario> pip freeze > requirements.txt
+(venv) PS D:\PYTHON DJANGO HOPES\Chat_API_DJANGO_mario> pip freeze > requirements.txt
+(venv) PS D:\PYTHON DJANGO HOPES\Chat_API_DJANGO_mario> pip freeze > requirements.txt
+(venv) PS D:\PYTHON DJANGO HOPES\Chat_API_DJANGO_mario> pip freeze > requirements.txt
+(venv) PS D:\PYTHON DJANGO HOPES\Chat_API_DJANGO_mario> py manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 08, 2026 - 07:04:00
+Django version 5.2.8, using settings 'monsite.settings'
+Starting ASGI/Daphne version 4.2.1 development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+HTTP GET / 200 [0.47, 127.0.0.1:27217]
+WebSocket HANDSHAKING /ws/chat/general/ [127.0.0.1:27218]
+WebSocket CONNECT /ws/chat/general/ [127.0.0.1:27218]
+WebSocket DISCONNECT /ws/chat/general/ [127.0.0.1:27218]
+HTTP GET / 200 [0.03, 127.0.0.1:27217]
+WebSocket HANDSHAKING /ws/chat/general/ [127.0.0.1:27219]
+WebSocket CONNECT /ws/chat/general/ [127.0.0.1:27219]
+HTTP GET /admin 301 [0.09, 127.0.0.1:27239]
+HTTP GET /admin/ 200 [0.67, 127.0.0.1:27239]
+HTTP GET /static/admin/css/base.css 304 [0.02, 127.0.0.1:27239]
+HTTP GET /static/admin/css/dark_mode.css 304 [0.03, 127.0.0.1:27240]
+HTTP GET /static/admin/js/theme.js 304 [0.04, 127.0.0.1:27241]
+HTTP GET /static/admin/css/nav_sidebar.css 304 [0.05, 127.0.0.1:27242]
+HTTP GET /static/admin/css/dashboard.css 304 [0.09, 127.0.0.1:27243]
+HTTP GET /static/admin/js/nav_sidebar.js 304 [0.15, 127.0.0.1:27239]
+HTTP GET /static/admin/css/responsive.css 304 [0.17, 127.0.0.1:27244]
+HTTP GET /static/admin/img/icon-addlink.svg 200 [0.34, 127.0.0.1:27241]
+HTTP GET /static/admin/img/icon-changelink.svg 200 [0.34, 127.0.0.1:27240]
+HTTP GET /admin/chat/room/ 200 [0.23, 127.0.0.1:27239]
+HTTP GET /static/admin/css/base.css 304 [0.53, 127.0.0.1:27240]
+HTTP GET /static/admin/css/nav_sidebar.css 304 [0.53, 127.0.0.1:27243]
+HTTP GET /static/admin/js/theme.js 304 [0.54, 127.0.0.1:27242]
+HTTP GET /static/admin/css/dark_mode.css 304 [0.55, 127.0.0.1:27241]
+HTTP GET /static/admin/js/nav_sidebar.js 304 [0.64, 127.0.0.1:27244]
+HTTP GET /static/admin/css/responsive.css 304 [0.18, 127.0.0.1:27239]
+HTTP GET /static/admin/js/jquery.init.js 304 [0.08, 127.0.0.1:27239]
+HTTP GET /static/admin/css/changelists.css 304 [0.08, 127.0.0.1:27243]
+HTTP GET /static/admin/js/vendor/jquery/jquery.js 304 [0.08, 127.0.0.1:27242]
+HTTP GET /static/admin/js/admin/RelatedObjectLookups.js 304 [0.08, 127.0.0.1:27241]
+HTTP GET /static/admin/js/core.js 304 [0.09, 127.0.0.1:27244]
+HTTP GET /static/admin/js/prepopulate.js 304 [0.16, 127.0.0.1:27242]
+HTTP GET /static/admin/js/actions.js 304 [0.17, 127.0.0.1:27241]
+HTTP GET /static/admin/js/urlify.js 304 [0.18, 127.0.0.1:27239]
+HTTP GET /static/admin/js/vendor/xregexp/xregexp.js 304 [0.10, 127.0.0.1:27243]
+HTTP GET /static/admin/js/filters.js 304 [0.07, 127.0.0.1:27244]
+HTTP GET /admin/jsi18n/ 200 [0.43, 127.0.0.1:27240]
+HTTP GET /static/admin/img/search.svg 200 [0.01, 127.0.0.1:27241]
+HTTP GET /static/admin/img/tooltag-add.svg 200 [0.01, 127.0.0.1:27240]
+WebSocket HANDSHAKING /ws/chat/hibou/ [127.0.0.1:27245]
+WebSocket CONNECT /ws/chat/hibou/ [127.0.0.1:27245]
+WebSocket HANDSHAKING /ws/chat/general/ [127.0.0.1:27248]
+WebSocket CONNECT /ws/chat/general/ [127.0.0.1:27248]
+HTTP GET /api/rooms/ 200 [0.68, 127.0.0.1:27252]
+HTTP GET /static/rest_framework/css/bootstrap.min.css 304 [0.01, 127.0.0.1:27252]
+HTTP GET /static/rest_framework/css/bootstrap-tweaks.css 304 [0.03, 127.0.0.1:27253]
+HTTP GET /static/rest_framework/css/default.css 304 [0.02, 127.0.0.1:27252]
+HTTP GET /static/rest_framework/css/prettify.css 304 [0.02, 127.0.0.1:27253]
+HTTP GET /static/rest_framework/js/jquery-3.7.1.min.js 304 [0.15, 127.0.0.1:27253]
+HTTP GET /static/rest_framework/js/ajax-form.js 304 [0.16, 127.0.0.1:27252]
+HTTP GET /static/rest_framework/js/csrf.js 304 [0.15, 127.0.0.1:27254]
+HTTP GET /static/rest_framework/js/bootstrap.min.js 304 [0.19, 127.0.0.1:27255]
+HTTP GET /static/rest_framework/js/prettify-min.js 304 [0.25, 127.0.0.1:27256]
+HTTP GET /static/rest_framework/js/default.js 304 [0.34, 127.0.0.1:27257]
+HTTP GET /static/rest_framework/js/load-ajax-form.js 304 [0.24, 127.0.0.1:27252]
+HTTP GET /static/rest_framework/img/grid.png 304 [0.26, 127.0.0.1:27253]
+HTTP POST /api/rooms/ 201 [0.83, 127.0.0.1:27252]
+HTTP GET /api/rooms/ 200 [0.06, 127.0.0.1:27252]
+HTTP GET /admin/chat/message/ 200 [0.19, 127.0.0.1:27258]
+HTTP GET /static/admin/css/base.css 304 [0.14, 127.0.0.1:27258]
+HTTP GET /static/admin/css/dark_mode.css 304 [0.06, 127.0.0.1:27259]
+HTTP GET /static/admin/css/nav_sidebar.css 304 [0.03, 127.0.0.1:27261]
+HTTP GET /static/admin/js/theme.js 304 [0.07, 127.0.0.1:27260]
+HTTP GET /static/admin/css/changelists.css 304 [0.03, 127.0.0.1:27262]
+HTTP GET /static/admin/js/nav_sidebar.js 304 [0.04, 127.0.0.1:27263]
+HTTP GET /static/admin/js/vendor/jquery/jquery.js 304 [0.08, 127.0.0.1:27260]
+HTTP GET /static/admin/js/core.js 304 [0.07, 127.0.0.1:27261]
+HTTP GET /static/admin/js/jquery.init.js 304 [0.08, 127.0.0.1:27259]
+HTTP GET /static/admin/js/admin/RelatedObjectLookups.js 304 [0.02, 127.0.0.1:27262]
+HTTP GET /static/admin/js/actions.js 304 [0.03, 127.0.0.1:27263]
+HTTP GET /static/admin/js/urlify.js 304 [0.14, 127.0.0.1:27259]
+HTTP GET /static/admin/img/icon-viewlink.svg 200 [0.11, 127.0.0.1:27260]
+HTTP GET /static/admin/img/sorting-icons.svg 200 [0.12, 127.0.0.1:27259]
+HTTP GET /api/rooms/1/messages/ 200 [0.06, 127.0.0.1:27258]
+(venv) PS D:\PYTHON DJANGO HOPES\Chat_API_DJANGO_mario> pip freeze > requirements.txt
+(venv) PS D:\PYTHON DJANGO HOPES\Chat_API_DJANGO_mario> pip freeze > requirements.txt
+(venv) PS D:\PYTHON DJANGO HOPES\Chat_API_DJANGO_mario> pip freeze > requirements.txt
+(venv) PS D:\PYTHON DJANGO HOPES\Chat_API_DJANGO_mario> pip freeze > requirements.txt
+(venv) PS D:\PYTHON DJANGO HOPES\Chat_API_DJANGO_mario> pip freeze > requirements.txt
+(venv) PS D:\PYTHON DJANGO HOPES\Chat_API_DJANGO_mario> 

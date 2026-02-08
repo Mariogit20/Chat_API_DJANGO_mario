@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chat (Django + Channels)</title>
+  <style>
+    body{font-family:system-ui,Arial,sans-serif;max-width:720px;margin:24px auto;padding:0 12px}
+    .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+    input{padding:8px}
+    button{padding:8px 12px;cursor:pointer}
+    #log{background:#111;color:#eee;padding:12px;border-radius:10px;min-height:220px;white-space:pre-wrap}
+    .pill{padding:4px 8px;border-radius:999px;background:#eee}
+  </style>
+</head>
+<body>
+  <h1>Chat</h1>
+
+  <div class="row">
+    <label>Room <input id="room" value="general" /></label>
+    <label>Author <input id="author" value="Mario" /></label>
+    <span id="status" class="pill">offline</span>
+  </div>
+
+  <div class="row">
+    <input id="msg" placeholder="message..." style="flex:1;min-width:240px" />
+    <button id="connect">Connecter</button>
+    <button id="send">Envoyer</button>
+  </div>
+
+  <h3>Logs</h3>
+  <pre id="log"></pre>
+
+<script>
+  let ws = null;
+
+  const $ = (id) => document.getElementById(id);
+  const log = (t) => { $("log").textContent += t + "\n"; };
+  const setStatus = (s) => { $("status").textContent = s; };
+
+  function wsUrl() {
+    const room = encodeURIComponent(($("room").value || "general").trim());
+    return `ws://127.0.0.1:8000/ws/chat/${room}/`;
+  }
+
+  function connect() {
+    const url = wsUrl();
+    log(`🔌 ${url}`);
+
+    if (ws && (ws.readyState === WebSocket.OPEN || ws.readyState === WebSocket.CONNECTING)) {
+      try { ws.close(1000, "reconnect"); } catch {}
+    }
+
+    ws = new WebSocket(url);
+
+    ws.onopen = () => {
+      setStatus("online");
+      log("✅ WS connecté");
+    };
+
+    ws.onmessage = (e) => log("📩 " + e.data);
+
+    ws.onerror = () => log("⚠️ WS erreur");
+
+    ws.onclose = (e) => {
+      setStatus("offline");
+      log(`❌ WS fermé (code=${e.code}${e.reason ? ", reason=" + e.reason : ""})`);
+    };
+  }
+
+  $("connect").onclick = connect;
+
+  $("send").onclick = () => {
+    const content = ($("msg").value || "").trim();
+    if (!content) return;
+
+    if (!ws || ws.readyState !== WebSocket.OPEN) {
+      log("⚠️ Pas connecté (message non envoyé)");
+      return;
+    }
+
+    const author = ($("author").value || "anonymous").trim();
+    ws.send(JSON.stringify({ author, content }));
+    $("msg").value = "";
+  };
+
+  // auto connect au chargement
+  connect();
+</script>
+</body>
+</html>

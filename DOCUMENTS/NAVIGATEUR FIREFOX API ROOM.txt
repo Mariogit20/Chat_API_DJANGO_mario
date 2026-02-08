@@ -1,0 +1,19 @@
+Room List Create :
+http://127.0.0.1:8000/api/rooms/
+http://127.0.0.1:8000/api/rooms/
+
+Message List :     ( Au Format JSON )
+http://127.0.0.1:8000/api/rooms/1/messages/
+http://127.0.0.1:8000/api/rooms/1/messages/
+
+
+Chat
+http://127.0.0.1:8000/
+http://127.0.0.1:8000/
+
+Chat
+http://127.0.0.1:5500/frontend/
+http://127.0.0.1:5500/frontend/
+
+
+
