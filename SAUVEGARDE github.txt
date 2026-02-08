@@ -1,0 +1,1033 @@
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15
+$ git init
+Initialized empty Git repository in D:/PYTHON DJANGO HOPES/github15/.git/
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15 (master)
+$ git clone https://github.com/Mariogit20/Chat_API_DJANGO_mario.git
+Cloning into 'Chat_API_DJANGO_mario'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15 (master)
+$ cd Chat_API_DJANGO_mario
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (main)
+$ git branch Test
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (main)
+$ git checkout Test
+Switched to branch 'Test'
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Test)
+$ git push --set-upstream origin Test
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'Test' on GitHub by visiting:
+remote:      https://github.com/Mariogit20/Chat_API_DJANGO_mario/pull/new/Test
+remote:
+To https://github.com/Mariogit20/Chat_API_DJANGO_mario.git
+ * [new branch]      Test -> Test
+branch 'Test' set up to track 'origin/Test'.
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Test)
+$ git branch Dev
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Test)
+$ git checkout Dev
+Switched to branch 'Dev'
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ git push --set-upstream origin Dev
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'Dev' on GitHub by visiting:
+remote:      https://github.com/Mariogit20/Chat_API_DJANGO_mario/pull/new/Dev
+remote:
+To https://github.com/Mariogit20/Chat_API_DJANGO_mario.git
+ * [new branch]      Dev -> Dev
+branch 'Dev' set up to track 'origin/Dev'.
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ git add .gitignore
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ git commit -m "Ajout gitignore"
+[Dev c9c7530] Ajout gitignore
+ 1 file changed, 2 insertions(+)
+ create mode 100644 .gitignore
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 302 bytes | 302.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Mariogit20/Chat_API_DJANGO_mario.git
+   73a1a7c..c9c7530  Dev -> Dev
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ git add *
+The following paths are ignored by one of your .gitignore files:
+venv
+hint: Use -f if you really want to add them.
+hint: Disable this message with "git config advice.addIgnoredFile false"
+warning: in the working copy of 'README_WS.txt', LF will be replaced by CRLF the
+ next time Git touches it
+warning: in the working copy of 'chat/admin.py', LF will be replaced by CRLF the
+ next time Git touches it
+warning: in the working copy of 'chat/apps.py', LF will be replaced by CRLF the
+next time Git touches it
+warning: in the working copy of 'chat/consumers - Copie.py', LF will be replaced
+ by CRLF the next time Git touches it
+warning: in the working copy of 'chat/consumers.py', LF will be replaced by CRLF
+ the next time Git touches it
+warning: in the working copy of 'chat/consumers_SUPPR.py', LF will be replaced b
+y CRLF the next time Git touches it
+warning: in the working copy of 'chat/models.py', LF will be replaced by CRLF th
+e next time Git touches it
+warning: in the working copy of 'chat/routing.py', LF will be replaced by CRLF t
+he next time Git touches it
+warning: in the working copy of 'chat/serializers.py', LF will be replaced by CR
+LF the next time Git touches it
+warning: in the working copy of 'chat/templates/chat/index.html', LF will be rep
+laced by CRLF the next time Git touches it
+warning: in the working copy of 'chat/urls.py', LF will be replaced by CRLF the
+next time Git touches it
+warning: in the working copy of 'chat/views.py', LF will be replaced by CRLF the
+ next time Git touches it
+warning: in the working copy of 'frontend/index.html', LF will be replaced by CR
+LF the next time Git touches it
+warning: in the working copy of 'manage.py', LF will be replaced by CRLF the nex
+t time Git touches it
+warning: in the working copy of 'monsite/asgi.py', LF will be replaced by CRLF t
+he next time Git touches it
+warning: in the working copy of 'monsite/settings.py', LF will be replaced by CR
+LF the next time Git touches it
+warning: in the working copy of 'monsite/urls.py', LF will be replaced by CRLF t
+he next time Git touches it
+warning: in the working copy of 'monsite/wsgi.py', LF will be replaced by CRLF t
+he next time Git touches it
+warning: in the working copy of 'templates/chat/index.html', LF will be replaced
+ by CRLF the next time Git touches it
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ git commit -m "second commit"
+[Dev 693373c] second commit
+ 50 files changed, 971 insertions(+)
+ create mode 100644 API de CHAT backend DJANGO frontend JAVASCRIPT HTML CSS.mp4
+ create mode 100644 DOCUMENTS/API_de_CHAT_noaudio_lossless.mp4
+ create mode 100644 DOCUMENTS/COMMANDE TERMINAL DJANGO.txt
+ create mode 100644 DOCUMENTS/DJANGO API chat online 2.docx
+ create mode 100644 DOCUMENTS/DJANGO API chat online 2.pdf
+ create mode 100644 DOCUMENTS/DJANGO API chat online.docx
+ create mode 100644 DOCUMENTS/DJANGO API chat online.pdf
+ create mode 100644 DOCUMENTS/NAVIGATEUR FIREFOX API ROOM.txt
+ create mode 100644 README_WS.txt
+ create mode 100644 chat/__init__.py
+ create mode 100644 chat/__pycache__/__init__.cpython-312.pyc
+ create mode 100644 chat/__pycache__/admin.cpython-312.pyc
+ create mode 100644 chat/__pycache__/apps.cpython-312.pyc
+ create mode 100644 chat/__pycache__/consumers.cpython-312.pyc
+ create mode 100644 chat/__pycache__/models.cpython-312.pyc
+ create mode 100644 chat/__pycache__/routing.cpython-312.pyc
+ create mode 100644 chat/__pycache__/serializers.cpython-312.pyc
+ create mode 100644 chat/__pycache__/urls.cpython-312.pyc
+ create mode 100644 chat/__pycache__/views.cpython-312.pyc
+ create mode 100644 chat/admin.py
+ create mode 100644 chat/apps.py
+ create mode 100644 chat/consumers - Copie.py
+ create mode 100644 chat/consumers.py
+ create mode 100644 chat/consumers_SUPPR.py
+ create mode 100644 chat/migrations/0001_initial.py
+ create mode 100644 chat/migrations/__init__.py
+ create mode 100644 chat/migrations/__pycache__/0001_initial.cpython-312.pyc
+ create mode 100644 chat/migrations/__pycache__/__init__.cpython-312.pyc
+ create mode 100644 chat/models.py
+ create mode 100644 chat/routing.py
+ create mode 100644 chat/serializers.py
+ create mode 100644 chat/templates/chat/index.html
+ create mode 100644 chat/tests.py
+ create mode 100644 chat/urls.py
+ create mode 100644 chat/views.py
+ create mode 100644 db.sqlite3
+ create mode 100644 frontend/index.html
+ create mode 100644 manage.py
+ create mode 100644 monsite/__init__.py
+ create mode 100644 monsite/__pycache__/__init__.cpython-312.pyc
+ create mode 100644 monsite/__pycache__/asgi.cpython-312.pyc
+ create mode 100644 monsite/__pycache__/settings.cpython-312.pyc
+ create mode 100644 monsite/__pycache__/urls.cpython-312.pyc
+ create mode 100644 monsite/__pycache__/wsgi.cpython-312.pyc
+ create mode 100644 monsite/asgi.py
+ create mode 100644 monsite/settings.py
+ create mode 100644 monsite/urls.py
+ create mode 100644 monsite/wsgi.py
+ create mode 100644 requirements.txt
+ create mode 100644 templates/chat/index.html
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ git config --global http.postBuffer 2048576000
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ git push
+Enumerating objects: 62, done.
+Counting objects: 100% (62/62), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (55/55), done.
+Writing objects: 100% (61/61), 16.04 MiB | 19.49 MiB/s, done.
+Total 61 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+error: RPC failed; HTTP 408 curl 22 The requested URL returned error: 408
+send-pack: unexpected disconnect while reading sideband packet
+fatal: the remote end hung up unexpectedly
+Everything up-to-date
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ git status
+git log --oneline --decorate -5
+git ls-remote --heads origin
+On branch Dev
+Your branch is ahead of 'origin/Dev' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+693373c (HEAD -> Dev) second commit
+c9c7530 (origin/Dev) Ajout gitignore
+73a1a7c (origin/main, origin/Test, origin/HEAD, main, Test) Initial commit
+c9c7530b0aeb19a396ed4e2de28f8a08948ad572        refs/heads/Dev
+73a1a7cf197e6ab1c3b3805a53b372685215f7e5        refs/heads/Test
+73a1a7cf197e6ab1c3b3805a53b372685215f7e5        refs/heads/main
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ git add .gitignore
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ git commit -m "modif gitignore"
+[Dev 70dd0be] modif gitignore
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ git push
+Enumerating objects: 66, done.
+Counting objects: 100% (66/66), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (57/57), done.
+Writing objects: 100% (64/64), 16.04 MiB | 19.21 MiB/s, done.
+Total 64 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+error: RPC failed; HTTP 408 curl 22 The requested URL returned error: 408
+send-pack: unexpected disconnect while reading sideband packet
+fatal: the remote end hung up unexpectedly
+Everything up-to-date
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ git lfs install
+git lfs track "*.mp4"
+git add .gitattributes
+git commit -m "Suivre les mp4 avec Git LFS"
+Updated Git hooks.
+Git LFS initialized.
+Tracking "*.mp4"
+[Dev 10a58b3] Suivre les mp4 avec Git LFS
+ 1 file changed, 1 insertion(+)
+ create mode 100644 .gitattributes
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ git rm --cached *.mp4
+git rm --cached DOCUMENTS/*.mp4
+git add *.mp4 DOCUMENTS/*.mp4
+git commit -m "Basculer les mp4 vers LFS"
+git push origin Dev
+rm 'API de CHAT backend DJANGO frontend JAVASCRIPT HTML CSS.mp4'
+rm 'DOCUMENTS/API_de_CHAT_noaudio_lossless.mp4'
+[Dev 44deed1] Basculer les mp4 vers LFS
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+Uploading LFS objects:   0% (0/1), 8.8 MB | 48 KB/s, done.
+batch response: Post "https://github.com/Mariogit20/Chat_API_DJANGO_mario.git/in
+fo/lfs/objects/batch": dial tcp: lookup github.com: no such host
+error: failed to push some refs to 'https://github.com/Mariogit20/Chat_API_DJANG
+O_mario.git'
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ ping -n 2 github.com
+nslookup github.com
+
+Envoi d’une requête 'ping' sur github.com [140.82.121.3] avec 32 octets de donné
+es :
+Réponse de 140.82.121.3 : octets=32 temps=276 ms TTL=47
+Réponse de 140.82.121.3 : octets=32 temps=280 ms TTL=47
+
+Statistiques Ping pour 140.82.121.3:
+    Paquets : envoyés = 2, reçus = 2, perdus = 0 (perte 0%),
+Durée approximative des boucles en millisecondes :
+    Minimum = 276ms, Maximum = 280ms, Moyenne = 278ms
+Serveur :   UnKnown
+Address:  192.168.43.1
+
+Réponse ne faisant pas autorité :
+Nom :    github.com
+Address:  140.82.121.3
+
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ git config --global --get http.proxy
+git config --global --get https.proxy
+git config --system --get http.proxy
+git config --system --get https.proxy
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ git config --global http.sslBackend schannel
+git config --global http.sslCAInfo ""
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ git lfs env
+git push origin Dev
+git-lfs/3.6.0 (GitHub; windows amd64; go 1.23.3; git 6340befc)
+git version 2.47.1.windows.1
+
+Endpoint=https://github.com/Mariogit20/Chat_API_DJANGO_mario.git/info/lfs (auth=
+basic)
+LocalWorkingDir=D:\PYTHON DJANGO HOPES\github15\Chat_API_DJANGO_mario
+LocalGitDir=D:\PYTHON DJANGO HOPES\github15\Chat_API_DJANGO_mario\.git
+LocalGitStorageDir=D:\PYTHON DJANGO HOPES\github15\Chat_API_DJANGO_mario\.git
+LocalMediaDir=D:\PYTHON DJANGO HOPES\github15\Chat_API_DJANGO_mario\.git\lfs\obj
+ects
+LocalReferenceDirs=
+TempDir=D:\PYTHON DJANGO HOPES\github15\Chat_API_DJANGO_mario\.git\lfs\tmp
+ConcurrentTransfers=8
+TusTransfers=false
+BasicTransfersOnly=false
+SkipDownloadErrors=false
+FetchRecentAlways=false
+FetchRecentRefsDays=7
+FetchRecentCommitsDays=0
+FetchRecentRefsIncludeRemotes=true
+PruneOffsetDays=3
+PruneVerifyRemoteAlways=false
+PruneVerifyUnreachableAlways=false
+PruneRemoteName=origin
+LfsStorageDir=D:\PYTHON DJANGO HOPES\github15\Chat_API_DJANGO_mario\.git\lfs
+AccessDownload=basic
+AccessUpload=basic
+DownloadTransfers=basic,lfs-standalone-file,ssh
+UploadTransfers=basic,lfs-standalone-file,ssh
+GIT_EXEC_PATH=C:/Program Files/Git/mingw64/libexec/git-core
+GIT_LFS_PATH=C:\Program Files\Git LFS
+git config filter.lfs.process = "git-lfs filter-process"
+git config filter.lfs.smudge = "git-lfs smudge -- %f"
+git config filter.lfs.clean = "git-lfs clean -- %f"
+Uploading LFS objects:   0% (0/1), 4.0 MB | 52 KB/s, done.
+batch response: Post "https://github.com/Mariogit20/Chat_API_DJANGO_mario.git/in
+fo/lfs/objects/batch": dial tcp: lookup github.com: no such host
+error: failed to push some refs to 'https://github.com/Mariogit20/Chat_API_DJANG
+O_mario.git'
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ ssh-keygen -t ed25519 -C "mariomariochatgpt@gmail.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/c/Users/SPSSE02MEN/.ssh/id_ed25519):
+/c/Users/SPSSE02MEN/.ssh/id_ed25519 already exists.
+Overwrite (y/n)? n
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+Agent pid 439
+Identity added: /c/Users/SPSSE02MEN/.ssh/id_ed25519 (mariomariochatgpt@gmail.com)
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ cat ~/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIF7ge6YRqm17nZiegajmEaro2o5aP2Qr7+zWVS+K9fQl mariomariochatgpt@gmail.com
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ ssh-keygen -t ed25519 -C "mariomariochatgpt@gmail.com" -f ~/.ssh/id_ed25519_mariogit20
+Generating public/private ed25519 key pair.
+Enter passphrase for "/c/Users/SPSSE02MEN/.ssh/id_ed25519_mariogit20" (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/SPSSE02MEN/.ssh/id_ed25519_mariogit20
+Your public key has been saved in /c/Users/SPSSE02MEN/.ssh/id_ed25519_mariogit20.pub
+The key fingerprint is:
+SHA256:+gWNxXc8ZiXvfgdBrm5Hdq4qDnN89ypi9TRG16l6pT4 mariomariochatgpt@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|              o .|
+|         .   + + |
+|          o . O +|
+|         + . =.=o|
+|        S . ..=.o|
+|       . o ..++* |
+|      . o +.=+=.=|
+|       . =++.E.oo|
+|        .o.o+++..|
++----[SHA256]-----+
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519_mariogit20
+ssh-add -l
+Agent pid 472
+Identity added: /c/Users/SPSSE02MEN/.ssh/id_ed25519_mariogit20 (mariomariochatgpt@gmail.com)
+256 SHA256:+gWNxXc8ZiXvfgdBrm5Hdq4qDnN89ypi9TRG16l6pT4 mariomariochatgpt@gmail.com (ED25519)
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ cat ~/.ssh/id_ed25519_mariogit20.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDDq63XFbrFQDeHw8Rny8usymzyTmKdvZFlsOmw3t+oI mariomariochatgpt@gmail.com
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ ssh -T git@github.com
+Hi Mariogit20! You've successfully authenticated, but GitHub does not provide shell access.
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ git remote -v
+git remote set-url origin git@github.com:Mariogit20/Chat_API_DJANGO_mario.git
+git remote -v
+origin  https://github.com/Mariogit20/Chat_API_DJANGO_mario.git (fetch)
+origin  https://github.com/Mariogit20/Chat_API_DJANGO_mario.git (push)
+origin  git@github.com:Mariogit20/Chat_API_DJANGO_mario.git (fetch)
+origin  git@github.com:Mariogit20/Chat_API_DJANGO_mario.git (push)
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ git remote remove origin
+git remote add origin git@github.com:Mariogit20/Chat_API_DJANGO_mario.git
+git remote -v
+origin  git@github.com:Mariogit20/Chat_API_DJANGO_mario.git (fetch)
+origin  git@github.com:Mariogit20/Chat_API_DJANGO_mario.git (push)
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ git config --global --unset-all lfs.url 2>/dev/null || true
+git config --local  --unset-all lfs.url 2>/dev/null || true
+git config --global --unset-all lfs.endpoint 2>/dev/null || true
+git config --local  --unset-all lfs.endpoint 2>/dev/null || true
+git config --unset-all remote.origin.lfsurl 2>/dev/null || true
+git config --unset-all remote.origin.lfspushurl 2>/dev/null || true
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ git lfs uninstall
+git lfs install
+git lfs env | grep Endpoint
+warning: some filter configuration was not removed (found filter.lfs.smudge)
+Hooks for this repository have been removed.
+Global Git LFS configuration has been removed.
+Updated Git hooks.
+Git LFS initialized.
+Endpoint=https://github.com/Mariogit20/Chat_API_DJANGO_mario.git/info/lfs (auth=basic)
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ git config --local lfs.url "ssh://git@github.com/Mariogit20/Chat_API_DJANGO_mario.git/info/lfs"
+git config --local lfs.pushurl "ssh://git@github.com/Mariogit20/Chat_API_DJANGO_mario.git/info/lfs"
+git config --local lfs.https://github.com/Mariogit20/Chat_API_DJANGO_mario.git/info/lfs.access ssh
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ git lfs env | grep Endpoint
+Endpoint=https://github.com/Mariogit20/Chat_API_DJANGO_mario.git/info/lfs (auth=ssh)
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ cat /etc/resolv.conf
+cat: /etc/resolv.conf: No such file or directory
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ curl -I https://github.com
+HTTP/1.1 200 OK
+Date: Sun, 08 Feb 2026 08:49:24 GMT
+Content-Type: text/html; charset=utf-8
+Vary: X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, X-Requested-With, Acce
+pt-Language, Sec-Fetch-Site,Accept-Encoding, Accept, X-Requested-With
+content-language: en-US
+ETag: W/"77bc5a4844393f0b0df6d8434d48cc58"
+Cache-Control: max-age=0, private, must-revalidate
+Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+X-Frame-Options: deny
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+Content-Security-Policy: default-src 'none'; base-uri 'self'; child-src github.g
+ithubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.com
+/assets-cdn/worker/; connect-src 'self' uploads.github.com www.githubstatus.com
+collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.am
+azonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-pro
+duction-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asse
+t-6210df.s3.amazonaws.com *.rel.tunnels.api.visualstudio.com wss://*.rel.tunnels
+.api.visualstudio.com github.githubassets.com objects-origin.githubusercontent.c
+om copilot-proxy.githubusercontent.com proxy.individual.githubcopilot.com proxy.
+business.githubcopilot.com proxy.enterprise.githubcopilot.com *.actions.githubus
+ercontent.com wss://*.actions.githubusercontent.com productionresultssa0.blob.co
+re.windows.net/ productionresultssa1.blob.core.windows.net/ productionresultssa2
+.blob.core.windows.net/ productionresultssa3.blob.core.windows.net/ productionre
+sultssa4.blob.core.windows.net/ productionresultssa5.blob.core.windows.net/ prod
+uctionresultssa6.blob.core.windows.net/ productionresultssa7.blob.core.windows.n
+et/ productionresultssa8.blob.core.windows.net/ productionresultssa9.blob.core.w
+indows.net/ productionresultssa10.blob.core.windows.net/ productionresultssa11.b
+lob.core.windows.net/ productionresultssa12.blob.core.windows.net/ productionres
+ultssa13.blob.core.windows.net/ productionresultssa14.blob.core.windows.net/ pro
+ductionresultssa15.blob.core.windows.net/ productionresultssa16.blob.core.window
+s.net/ productionresultssa17.blob.core.windows.net/ productionresultssa18.blob.c
+ore.windows.net/ productionresultssa19.blob.core.windows.net/ github-production-
+repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.
+s3.amazonaws.com insights.github.com wss://alive.github.com wss://alive-staging.
+github.com api.githubcopilot.com api.individual.githubcopilot.com api.business.g
+ithubcopilot.com api.enterprise.githubcopilot.com edge.fullstory.com rs.fullstor
+y.com; font-src github.githubassets.com; form-action 'self' github.com gist.gith
+ub.com copilot-workspace.githubnext.com objects-origin.githubusercontent.com; fr
+ame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githu
+busercontent.com www.youtube-nocookie.com; img-src 'self' data: blob: github.git
+hubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.
+github.com avatars.githubusercontent.com private-avatars.githubusercontent.com g
+ithub-cloud.s3.amazonaws.com objects.githubusercontent.com release-assets.github
+usercontent.com secured-user-images.githubusercontent.com/ user-images.githubuse
+rcontent.com/ private-user-images.githubusercontent.com opengraph.githubassets.c
+om marketplace-screenshots.githubusercontent.com/ copilotprodattachments.blob.co
+re.windows.net/github-production-copilot-attachments/ github-production-user-ass
+et-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.gith
+ub.com objects-origin.githubusercontent.com *.githubusercontent.com images.ctfas
+sets.net/8aevphvgewt8/; manifest-src 'self'; media-src github.com user-images.gi
+thubusercontent.com/ secured-user-images.githubusercontent.com/ private-user-ima
+ges.githubusercontent.com github-production-user-asset-6210df.s3.amazonaws.com g
+ist.github.com github.githubassets.com assets.ctfassets.net/8aevphvgewt8/ videos
+.ctfassets.net/8aevphvgewt8/; script-src github.githubassets.com; style-src 'uns
+afe-inline' github.githubassets.com; upgrade-insecure-requests; worker-src githu
+b.githubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.
+com/assets-cdn/worker/
+Server: github.com
+Accept-Ranges: bytes
+Set-Cookie: _gh_sess=fLro%2BsredRZrFeLjg0%2FOk3GtSqoc9eta47%2BSjLybEw3ILYm2wqqZP
+kgqIo3LE8nwANtiguFVC7JOMKq4lS2UN%2FClg6iJuvt3NvBspQ102S9yl4VvF6H6LUovRMpAaJpFaqL
+wr5lBqMeK4FGPPLiNeoVsEq50vqwkjg0qQLhx460E1qFtScf3rqOyp3yVmI5Qn5sv2LlJjno8J4z%2F%
+2FDo5QpaVRQellc9fUVi8AG0plsjNdoERWrr9YdneWjWydpa0wpdS3UAICdLpQGKk5%2B75zw%3D%3D-
+-JDB8T%2B5KrRU7I%2BWZ--Jokaxwp53q2XsHGAZ4QMig%3D%3D; Path=/; HttpOnly; Secure; S
+ameSite=Lax
+Set-Cookie: _octo=GH1.1.954989489.1770540570; Path=/; Domain=github.com; Expires
+=Mon, 08 Feb 2027 08:49:30 GMT; Secure; SameSite=Lax
+Set-Cookie: logged_in=no; Path=/; Domain=github.com; Expires=Mon, 08 Feb 2027 08
+:49:30 GMT; HttpOnly; Secure; SameSite=Lax
+X-GitHub-Request-Id: F23D:23DC51:A3BA0CA:83C7D5A:69884E1A
+
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ git config --global lfs.concurrenttransfers 1
+git config --global lfs.transfer.maxretries 20
+git config --global lfs.transfer.maxretrydelay 30
+git config --global lfs.tustransfers false
+git config --global lfs.basictransfersonly true
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ GIT_TRACE=1 GIT_CURL_VERBOSE=1 git lfs push --all origin Dev
+git push origin Dev
+11:50:57.071990 exec-cmd.c:266          trace: resolved executable dir: C:/Progr
+am Files/Git/mingw64/bin
+11:50:57.082794 git.c:783               trace: exec: git-lfs push --all origin D
+ev
+11:50:57.082794 run-command.c:667       trace: run_command: git-lfs push --all o
+rigin Dev
+11:50:57.082794 run-command.c:928       trace: start_command: git-lfs push --all
+ origin Dev
+11:50:57.292281 trace git-lfs: exec: git '-c' 'filter.lfs.smudge=' '-c' 'filter.
+lfs.clean=' '-c' 'filter.lfs.process=' '-c' 'filter.lfs.required=false' 'remote'
+11:50:57.540655 trace git-lfs: exec: git '-c' 'filter.lfs.smudge=' '-c' 'filter.
+lfs.clean=' '-c' 'filter.lfs.process=' '-c' 'filter.lfs.required=false' 'rev-par
+se' 'HEAD' '--symbolic-full-name' 'HEAD'
+11:50:57.585436 trace git-lfs: exec: git '-c' 'filter.lfs.smudge=' '-c' 'filter.
+lfs.clean=' '-c' 'filter.lfs.process=' '-c' 'filter.lfs.required=false' 'rev-par
+se' '--git-dir' '--show-toplevel'
+11:50:57.617321 trace git-lfs: exec: git 'config' '--includes' '-l'
+11:50:57.645490 trace git-lfs: exec: git 'rev-parse' '--is-bare-repository'
+11:50:57.671430 trace git-lfs: exec: git 'config' '--includes' '-l' '--blob' ':.
+lfsconfig'
+11:50:57.704386 trace git-lfs: exec: git 'config' '--includes' '-l' '--blob' 'HE
+AD:.lfsconfig'
+11:50:57.752735 trace git-lfs: exec: git '-c' 'filter.lfs.smudge=' '-c' 'filter.
+lfs.clean=' '-c' 'filter.lfs.process=' '-c' 'filter.lfs.required=false' 'rev-par
+se' '--git-dir'
+11:50:57.789874 trace git-lfs: exec: git '-c' 'filter.lfs.smudge=' '-c' 'filter.
+lfs.clean=' '-c' 'filter.lfs.process=' '-c' 'filter.lfs.required=false' 'remote'
+11:50:57.821334 trace git-lfs: attempting pure SSH protocol connection (upload,
+origin)
+11:50:57.846743 trace git-lfs: spawning pure SSH connection (#0)
+11:50:57.862450 trace git-lfs: run_command: ssh git@github.com git-lfs-transfer
+/Mariogit20/Chat_API_DJANGO_mario.git/info/lfs upload
+11:50:57.872726 trace git-lfs: exec: ssh 'git@github.com' 'git-lfs-transfer /Mar
+iogit20/Chat_API_DJANGO_mario.git/info/lfs upload'
+11:51:02.106354 trace git-lfs: pure SSH connection unsuccessful (#0)
+11:51:02.106907 trace git-lfs: pure SSH protocol connection failed (upload, orig
+in): Unable to negotiate version with remote side (unable to read capabilities):
+ EOF
+Failed to connect to remote SSH server: Invalid command: git-lfs-transfer /Mario
+git20/Chat_API_DJANGO_mario.git/info/lfs upload
+  You appear to be using ssh to clone a git:// URL.
+  Make sure your core.gitProxy config option and the
+  GIT_PROXY_COMMAND environment variable are NOT set.
+
+11:51:02.110667 trace git-lfs: Upload refs [Dev] to remote origin
+11:51:02.114378 trace git-lfs: exec: git '-c' 'filter.lfs.smudge=' '-c' 'filter.
+lfs.clean=' '-c' 'filter.lfs.process=' '-c' 'filter.lfs.required=false' 'show-re
+f'
+11:51:02.161863 trace git-lfs: exec: git '-c' 'filter.lfs.smudge=' '-c' 'filter.
+lfs.clean=' '-c' 'filter.lfs.process=' '-c' 'filter.lfs.required=false' 'show-re
+f'
+11:51:02.192722 trace git-lfs: exec: git '-c' 'filter.lfs.smudge=' '-c' 'filter.
+lfs.clean=' '-c' 'filter.lfs.process=' '-c' 'filter.lfs.required=false' 'ls-remo
+te' '--heads' '-q' 'origin'
+11:51:07.555234 trace git-lfs: attempting pure SSH protocol connection (upload,
+origin)
+11:51:07.555801 trace git-lfs: spawning pure SSH connection (#0)
+11:51:07.556382 trace git-lfs: run_command: ssh git@github.com git-lfs-transfer
+/Mariogit20/Chat_API_DJANGO_mario.git/info/lfs upload
+11:51:07.570779 trace git-lfs: exec: ssh 'git@github.com' 'git-lfs-transfer /Mar
+iogit20/Chat_API_DJANGO_mario.git/info/lfs upload'
+11:51:11.503198 trace git-lfs: pure SSH connection unsuccessful (#0)
+11:51:11.503791 trace git-lfs: pure SSH protocol connection failed (upload, orig
+in): Unable to negotiate version with remote side (unable to read capabilities):
+ EOF
+Failed to connect to remote SSH server: Invalid command: git-lfs-transfer /Mario
+git20/Chat_API_DJANGO_mario.git/info/lfs upload
+  You appear to be using ssh to clone a git:// URL.
+  Make sure your core.gitProxy config option and the
+  GIT_PROXY_COMMAND environment variable are NOT set.
+
+11:51:11.507902 trace git-lfs: run_command: ssh git@github.com git-lfs-authentic
+ate /Mariogit20/Chat_API_DJANGO_mario.git/info/lfs upload
+11:51:11.526484 trace git-lfs: exec: ssh 'git@github.com' 'git-lfs-authenticate
+/Mariogit20/Chat_API_DJANGO_mario.git/info/lfs upload'
+11:51:15.300750 trace git-lfs: ssh: git@github.com failed, error: exit status 1,
+ message: ERROR: invalid repository: 'Mariogit20/Chat_API_DJANGO_mario.git/info/
+lfs' (try: 0/6)
+11:51:15.301961 trace git-lfs: run_command: ssh git@github.com git-lfs-authentic
+ate /Mariogit20/Chat_API_DJANGO_mario.git/info/lfs upload
+11:51:15.316890 trace git-lfs: exec: ssh 'git@github.com' 'git-lfs-authenticate
+/Mariogit20/Chat_API_DJANGO_mario.git/info/lfs upload'
+11:51:19.379726 trace git-lfs: ssh: git@github.com failed, error: exit status 1,
+ message: ERROR: invalid repository: 'Mariogit20/Chat_API_DJANGO_mario.git/info/
+lfs' (try: 1/6)
+11:51:19.384160 trace git-lfs: run_command: ssh git@github.com git-lfs-authentic
+ate /Mariogit20/Chat_API_DJANGO_mario.git/info/lfs upload
+11:51:19.402628 trace git-lfs: exec: ssh 'git@github.com' 'git-lfs-authenticate
+/Mariogit20/Chat_API_DJANGO_mario.git/info/lfs upload'
+11:51:24.002941 trace git-lfs: ssh: git@github.com failed, error: exit status 1,
+ message: ERROR: invalid repository: 'Mariogit20/Chat_API_DJANGO_mario.git/info/
+lfs' (try: 2/6)
+11:51:24.004265 trace git-lfs: run_command: ssh git@github.com git-lfs-authentic
+ate /Mariogit20/Chat_API_DJANGO_mario.git/info/lfs upload
+11:51:24.026392 trace git-lfs: exec: ssh 'git@github.com' 'git-lfs-authenticate
+/Mariogit20/Chat_API_DJANGO_mario.git/info/lfs upload'
+11:51:28.243358 trace git-lfs: ssh: git@github.com failed, error: exit status 1,
+ message: ERROR: invalid repository: 'Mariogit20/Chat_API_DJANGO_mario.git/info/
+lfs' (try: 3/6)
+11:51:28.244779 trace git-lfs: run_command: ssh git@github.com git-lfs-authentic
+ate /Mariogit20/Chat_API_DJANGO_mario.git/info/lfs upload
+11:51:28.285027 trace git-lfs: exec: ssh 'git@github.com' 'git-lfs-authenticate
+/Mariogit20/Chat_API_DJANGO_mario.git/info/lfs upload'
+11:51:32.764352 trace git-lfs: ssh: git@github.com failed, error: exit status 1,
+ message: ERROR: invalid repository: 'Mariogit20/Chat_API_DJANGO_mario.git/info/
+lfs' (try: 4/6)
+11:51:32.765679 trace git-lfs: run_command: ssh git@github.com git-lfs-authentic
+ate /Mariogit20/Chat_API_DJANGO_mario.git/info/lfs upload
+11:51:32.785064 trace git-lfs: exec: ssh 'git@github.com' 'git-lfs-authenticate
+/Mariogit20/Chat_API_DJANGO_mario.git/info/lfs upload'
+11:51:37.379713 trace git-lfs: ssh: git@github.com failed, error: exit status 1,
+ message: ERROR: invalid repository: 'Mariogit20/Chat_API_DJANGO_mario.git/info/
+lfs' (try: 5/6)
+Remote "origin" does not support the Git LFS locking API. Consider disabling it
+with:
+  $ git config lfs.https://github.com/Mariogit20/Chat_API_DJANGO_mario.git/info/
+lfs.locksverify false
+ERROR: invalid repository: 'Mariogit20/Chat_API_DJANGO_mario.git/info/lfs': exit
+ status 1
+Remote "origin" does not support the Git LFS locking API. Consider disabling it
+with:
+  $ git config lfs.https://github.com/Mariogit20/Chat_API_DJANGO_mario.git/info/
+lfs.locksverify false
+ERROR: invalid repository: 'Mariogit20/Chat_API_DJANGO_mario.git/info/lfs': exit
+ status 1
+error: failed to push some refs to 'github.com:Mariogit20/Chat_API_DJANGO_mario.
+git'
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ git config --local --unset-all lfs.url 2>/dev/null || true
+git config --local --unset-all lfs.pushurl 2>/dev/null || true
+git config --local --unset-all lfs.endpoint 2>/dev/null || true
+
+git config --global --unset-all lfs.url 2>/dev/null || true
+git config --global --unset-all lfs.pushurl 2>/dev/null || true
+git config --global --unset-all lfs.endpoint 2>/dev/null || true
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ git remote set-url origin git@github.com:Mariogit20/Chat_API_DJANGO_mario.git
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ git config lfs.locksverify false
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ git lfs uninstall
+git lfs install
+warning: some filter configuration was not removed (found filter.lfs.clean)
+Hooks for this repository have been removed.
+Global Git LFS configuration has been removed.
+Removed invalid https://github.com/Mariogit20/Chat_API_DJANGO_mario.git/info/lfs
+ access of ssh.
+Updated Git hooks.
+Git LFS initialized.
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ git lfs env | grep Endpoint
+Endpoint=https://github.com/Mariogit20/Chat_API_DJANGO_mario.git/info/lfs (auth=none)
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ git config --show-origin --get-all lfs.url
+git config --show-origin --get-all lfs.pushurl
+git config --show-origin --get-all lfs.endpoint
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ git remote -v
+origin  git@github.com:Mariogit20/Chat_API_DJANGO_mario.git (fetch)
+origin  git@github.com:Mariogit20/Chat_API_DJANGO_mario.git (push)
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ git config --global lfs.url "https://github.com/Mariogit20/Chat_API_DJANGO_mario.git/info/lfs"
+git config --global lfs.https://github.com/Mariogit20/Chat_API_DJANGO_mario.git/info/lfs.access basic
+git config --global lfs.locksverify false
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ git lfs env | grep Endpoint
+Endpoint=https://github.com/Mariogit20/Chat_API_DJANGO_mario.git/info/lfs (auth=basic)
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ git lfs push --all origin Dev
+git push origin Dev
+Uploading LFS objects: 100% (1/1), 35 MB | 86 KB/s, done.
+Uploading LFS objects: 100% (1/1), 17 MB | 0 B/s, done.
+Enumerating objects: 73, done.
+Counting objects: 100% (73/73), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (63/63), done.
+Writing objects: 100% (71/71), 16.04 MiB | 44.00 KiB/s, done.
+Total 71 (delta 7), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (7/7), done.
+To github.com:Mariogit20/Chat_API_DJANGO_mario.git
+   c9c7530..44deed1  Dev -> Dev
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ git lfs ls-files
+22ba4f73d2 * API de CHAT backend DJANGO frontend JAVASCRIPT HTML CSS.mp4
+22ba4f73d2 * DOCUMENTS/API_de_CHAT_noaudio_lossless.mp4
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ git show HEAD:"API de CHAT backend DJANGO frontend JAVASCRIPT HTML CSS.mp4" | head
+version https://git-lfs.github.com/spec/v1
+oid sha256:22ba4f73d2236bcaf4decd6450ee00046fd557510e3e885bbcf471dd780512b8
+size 17424945
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ git check-attr -a -- "*.mp4"
+*.mp4: diff: lfs
+*.mp4: merge: lfs
+*.mp4: text: unset
+*.mp4: filter: lfs
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ git status
+git log --oneline --decorate -5
+git ls-remote --heads origin
+On branch Dev
+nothing to commit, working tree clean
+44deed1 (HEAD -> Dev, origin/Dev) Basculer les mp4 vers LFS
+10a58b3 Suivre les mp4 avec Git LFS
+70dd0be modif gitignore
+693373c second commit
+c9c7530 Ajout gitignore
+44deed1a0143e69aaf55c59f4ae853b3da66e9d9        refs/heads/Dev
+73a1a7cf197e6ab1c3b3805a53b372685215f7e5        refs/heads/Test
+73a1a7cf197e6ab1c3b3805a53b372685215f7e5        refs/heads/main
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ git checkout main
+git pull origin main
+git merge Dev
+git push origin main
+Switched to branch 'main'
+From github.com:Mariogit20/Chat_API_DJANGO_mario
+ * branch            main       -> FETCH_HEAD
+ * [new branch]      main       -> origin/main
+Already up to date.
+Updating 73a1a7c..44deed1
+Updating files: 100% (52/52), done.
+Fast-forward
+ .gitattributes                                     |   1 +
+ .gitignore                                         |   4 +
+ ...backend DJANGO frontend JAVASCRIPT HTML CSS.mp4 |   3 +
+ DOCUMENTS/API_de_CHAT_noaudio_lossless.mp4         |   3 +
+ DOCUMENTS/COMMANDE TERMINAL DJANGO.txt             | 103 ++++++++++++++++
+ DOCUMENTS/DJANGO API chat online 2.docx            | Bin 0 -> 282875 bytes
+ DOCUMENTS/DJANGO API chat online 2.pdf             | Bin 0 -> 1672713 bytes
+ DOCUMENTS/DJANGO API chat online.docx              | Bin 0 -> 48125 bytes
+ DOCUMENTS/DJANGO API chat online.pdf               | Bin 0 -> 393878 bytes
+ DOCUMENTS/NAVIGATEUR FIREFOX API ROOM.txt          |  19 +++
+ README_WS.txt                                      |  17 +++
+ chat/__init__.py                                   |   0
+ chat/__pycache__/__init__.cpython-312.pyc          | Bin 0 -> 158 bytes
+ chat/__pycache__/admin.cpython-312.pyc             | Bin 0 -> 990 bytes
+ chat/__pycache__/apps.cpython-312.pyc              | Bin 0 -> 460 bytes
+ chat/__pycache__/consumers.cpython-312.pyc         | Bin 0 -> 5060 bytes
+ chat/__pycache__/models.cpython-312.pyc            | Bin 0 -> 1777 bytes
+ chat/__pycache__/routing.cpython-312.pyc           | Bin 0 -> 403 bytes
+ chat/__pycache__/serializers.cpython-312.pyc       | Bin 0 -> 1173 bytes
+ chat/__pycache__/urls.cpython-312.pyc              | Bin 0 -> 569 bytes
+ chat/__pycache__/views.cpython-312.pyc             | Bin 0 -> 1572 bytes
+ chat/admin.py                                      |  13 +++
+ chat/apps.py                                       |   5 +
+ chat/consumers - Copie.py                          |  78 +++++++++++++
+ chat/consumers.py                                  |  78 +++++++++++++
+ chat/consumers_SUPPR.py                            |  64 ++++++++++
+ chat/migrations/0001_initial.py                    |  35 ++++++
+ chat/migrations/__init__.py                        |   0
+ .../__pycache__/0001_initial.cpython-312.pyc       | Bin 0 -> 1667 bytes
+ .../__pycache__/__init__.cpython-312.pyc           | Bin 0 -> 169 bytes
+ chat/models.py                                     |  19 +++
+ chat/routing.py                                    |   6 +
+ chat/serializers.py                                |  15 +++
+ chat/templates/chat/index.html                     |  91 +++++++++++++++
+ chat/tests.py                                      |   3 +
+ chat/urls.py                                       |   7 ++
+ chat/views.py                                      |  22 ++++
+ db.sqlite3                                         | Bin 0 -> 147456 bytes
+ frontend/index.html                                | 118 +++++++++++++++++++
+ manage.py                                          |  16 +++
+ monsite/__init__.py                                |   0
+ monsite/__pycache__/__init__.cpython-312.pyc       | Bin 0 -> 161 bytes
+ monsite/__pycache__/asgi.cpython-312.pyc           | Bin 0 -> 970 bytes
+ monsite/__pycache__/settings.cpython-312.pyc       | Bin 0 -> 2438 bytes
+ monsite/__pycache__/urls.cpython-312.pyc           | Bin 0 -> 570 bytes
+ monsite/__pycache__/wsgi.cpython-312.pyc           | Bin 0 -> 412 bytes
+ monsite/asgi.py                                    |  26 +++++
+ monsite/settings.py                                |  93 +++++++++++++++
+ monsite/urls.py                                    |   9 ++
+ monsite/wsgi.py                                    |   5 +
+ requirements.txt                                   | Bin 0 -> 1296 bytes
+ templates/chat/index.html                          | 129 +++++++++++++++++++++
+ 52 files changed, 982 insertions(+)
+ create mode 100644 .gitattributes
+ create mode 100644 .gitignore
+ create mode 100644 API de CHAT backend DJANGO frontend JAVASCRIPT HTML CSS.mp4
+ create mode 100644 DOCUMENTS/API_de_CHAT_noaudio_lossless.mp4
+ create mode 100644 DOCUMENTS/COMMANDE TERMINAL DJANGO.txt
+ create mode 100644 DOCUMENTS/DJANGO API chat online 2.docx
+ create mode 100644 DOCUMENTS/DJANGO API chat online 2.pdf
+ create mode 100644 DOCUMENTS/DJANGO API chat online.docx
+ create mode 100644 DOCUMENTS/DJANGO API chat online.pdf
+ create mode 100644 DOCUMENTS/NAVIGATEUR FIREFOX API ROOM.txt
+ create mode 100644 README_WS.txt
+ create mode 100644 chat/__init__.py
+ create mode 100644 chat/__pycache__/__init__.cpython-312.pyc
+ create mode 100644 chat/__pycache__/admin.cpython-312.pyc
+ create mode 100644 chat/__pycache__/apps.cpython-312.pyc
+ create mode 100644 chat/__pycache__/consumers.cpython-312.pyc
+ create mode 100644 chat/__pycache__/models.cpython-312.pyc
+ create mode 100644 chat/__pycache__/routing.cpython-312.pyc
+ create mode 100644 chat/__pycache__/serializers.cpython-312.pyc
+ create mode 100644 chat/__pycache__/urls.cpython-312.pyc
+ create mode 100644 chat/__pycache__/views.cpython-312.pyc
+ create mode 100644 chat/admin.py
+ create mode 100644 chat/apps.py
+ create mode 100644 chat/consumers - Copie.py
+ create mode 100644 chat/consumers.py
+ create mode 100644 chat/consumers_SUPPR.py
+ create mode 100644 chat/migrations/0001_initial.py
+ create mode 100644 chat/migrations/__init__.py
+ create mode 100644 chat/migrations/__pycache__/0001_initial.cpython-312.pyc
+ create mode 100644 chat/migrations/__pycache__/__init__.cpython-312.pyc
+ create mode 100644 chat/models.py
+ create mode 100644 chat/routing.py
+ create mode 100644 chat/serializers.py
+ create mode 100644 chat/templates/chat/index.html
+ create mode 100644 chat/tests.py
+ create mode 100644 chat/urls.py
+ create mode 100644 chat/views.py
+ create mode 100644 db.sqlite3
+ create mode 100644 frontend/index.html
+ create mode 100644 manage.py
+ create mode 100644 monsite/__init__.py
+ create mode 100644 monsite/__pycache__/__init__.cpython-312.pyc
+ create mode 100644 monsite/__pycache__/asgi.cpython-312.pyc
+ create mode 100644 monsite/__pycache__/settings.cpython-312.pyc
+ create mode 100644 monsite/__pycache__/urls.cpython-312.pyc
+ create mode 100644 monsite/__pycache__/wsgi.cpython-312.pyc
+ create mode 100644 monsite/asgi.py
+ create mode 100644 monsite/settings.py
+ create mode 100644 monsite/urls.py
+ create mode 100644 monsite/wsgi.py
+ create mode 100644 requirements.txt
+ create mode 100644 templates/chat/index.html
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:Mariogit20/Chat_API_DJANGO_mario.git
+   73a1a7c..44deed1  main -> main
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (main)
+$ # 1) Vérifie que tu es bien sur Dev
+   # 1) Vérifie que tu es bien sur Dev
+
+# 1) Vérifie que tu es bien sur Dev
+git checkout Dev
+
+# 2) Ajoute des règles propres (sans ignorer db.sqlite3)
+cat >> .gitignore <<'EOF'
+
+# --- Python cache ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Env / build ---
+.venv/
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# --- IDE ---
+.vscode/
+git push origin Devre Python cache files"te/__pycache__ chat/migrations/__pycach
+Switched to branch 'Dev'
+rm 'chat/__pycache__/__init__.cpython-312.pyc'
+rm 'chat/__pycache__/admin.cpython-312.pyc'
+rm 'chat/__pycache__/apps.cpython-312.pyc'
+rm 'chat/__pycache__/consumers.cpython-312.pyc'
+rm 'chat/__pycache__/models.cpython-312.pyc'
+rm 'chat/__pycache__/routing.cpython-312.pyc'
+rm 'chat/__pycache__/serializers.cpython-312.pyc'
+rm 'chat/__pycache__/urls.cpython-312.pyc'
+rm 'chat/__pycache__/views.cpython-312.pyc'
+rm 'monsite/__pycache__/__init__.cpython-312.pyc'
+rm 'monsite/__pycache__/asgi.cpython-312.pyc'
+rm 'monsite/__pycache__/settings.cpython-312.pyc'
+rm 'monsite/__pycache__/urls.cpython-312.pyc'
+rm 'monsite/__pycache__/wsgi.cpython-312.pyc'
+fatal: pathspec 'chat/__pycache__' did not match any files
+rm 'chat/migrations/__pycache__/0001_initial.cpython-312.pyc'
+rm 'chat/migrations/__pycache__/__init__.cpython-312.pyc'
+warning: in the working copy of '.gitignore', LF will be replaced by CRLF the ne
+xt time Git touches it
+[Dev 5782ea3] Ignore Python cache files
+ 17 files changed, 18 insertions(+)
+ delete mode 100644 chat/__pycache__/__init__.cpython-312.pyc
+ delete mode 100644 chat/__pycache__/admin.cpython-312.pyc
+ delete mode 100644 chat/__pycache__/apps.cpython-312.pyc
+ delete mode 100644 chat/__pycache__/consumers.cpython-312.pyc
+ delete mode 100644 chat/__pycache__/models.cpython-312.pyc
+ delete mode 100644 chat/__pycache__/routing.cpython-312.pyc
+ delete mode 100644 chat/__pycache__/serializers.cpython-312.pyc
+ delete mode 100644 chat/__pycache__/urls.cpython-312.pyc
+ delete mode 100644 chat/__pycache__/views.cpython-312.pyc
+ delete mode 100644 chat/migrations/__pycache__/0001_initial.cpython-312.pyc
+ delete mode 100644 chat/migrations/__pycache__/__init__.cpython-312.pyc
+ delete mode 100644 monsite/__pycache__/__init__.cpython-312.pyc
+ delete mode 100644 monsite/__pycache__/asgi.cpython-312.pyc
+ delete mode 100644 monsite/__pycache__/settings.cpython-312.pyc
+ delete mode 100644 monsite/__pycache__/urls.cpython-312.pyc
+ delete mode 100644 monsite/__pycache__/wsgi.cpython-312.pyc
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 593 bytes | 296.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+To github.com:Mariogit20/Chat_API_DJANGO_mario.git
+   44deed1..5782ea3  Dev -> Dev
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (Dev)
+$ git checkout main
+git pull origin main
+git merge Dev
+git push origin main
+Switched to branch 'main'
+From github.com:Mariogit20/Chat_API_DJANGO_mario
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+Updating 44deed1..5782ea3
+Fast-forward
+ .gitignore                                            |  18 ++++++++++++++++++
+ chat/__pycache__/__init__.cpython-312.pyc             | Bin 158 -> 0 bytes
+ chat/__pycache__/admin.cpython-312.pyc                | Bin 990 -> 0 bytes
+ chat/__pycache__/apps.cpython-312.pyc                 | Bin 460 -> 0 bytes
+ chat/__pycache__/consumers.cpython-312.pyc            | Bin 5060 -> 0 bytes
+ chat/__pycache__/models.cpython-312.pyc               | Bin 1777 -> 0 bytes
+ chat/__pycache__/routing.cpython-312.pyc              | Bin 403 -> 0 bytes
+ chat/__pycache__/serializers.cpython-312.pyc          | Bin 1173 -> 0 bytes
+ chat/__pycache__/urls.cpython-312.pyc                 | Bin 569 -> 0 bytes
+ chat/__pycache__/views.cpython-312.pyc                | Bin 1572 -> 0 bytes
+ .../__pycache__/0001_initial.cpython-312.pyc          | Bin 1667 -> 0 bytes
+ chat/migrations/__pycache__/__init__.cpython-312.pyc  | Bin 169 -> 0 bytes
+ monsite/__pycache__/__init__.cpython-312.pyc          | Bin 161 -> 0 bytes
+ monsite/__pycache__/asgi.cpython-312.pyc              | Bin 970 -> 0 bytes
+ monsite/__pycache__/settings.cpython-312.pyc          | Bin 2438 -> 0 bytes
+ monsite/__pycache__/urls.cpython-312.pyc              | Bin 570 -> 0 bytes
+ monsite/__pycache__/wsgi.cpython-312.pyc              | Bin 412 -> 0 bytes
+ 17 files changed, 18 insertions(+)
+ delete mode 100644 chat/__pycache__/__init__.cpython-312.pyc
+ delete mode 100644 chat/__pycache__/admin.cpython-312.pyc
+ delete mode 100644 chat/__pycache__/apps.cpython-312.pyc
+ delete mode 100644 chat/__pycache__/consumers.cpython-312.pyc
+ delete mode 100644 chat/__pycache__/models.cpython-312.pyc
+ delete mode 100644 chat/__pycache__/routing.cpython-312.pyc
+ delete mode 100644 chat/__pycache__/serializers.cpython-312.pyc
+ delete mode 100644 chat/__pycache__/urls.cpython-312.pyc
+ delete mode 100644 chat/__pycache__/views.cpython-312.pyc
+ delete mode 100644 chat/migrations/__pycache__/0001_initial.cpython-312.pyc
+ delete mode 100644 chat/migrations/__pycache__/__init__.cpython-312.pyc
+ delete mode 100644 monsite/__pycache__/__init__.cpython-312.pyc
+ delete mode 100644 monsite/__pycache__/asgi.cpython-312.pyc
+ delete mode 100644 monsite/__pycache__/settings.cpython-312.pyc
+ delete mode 100644 monsite/__pycache__/urls.cpython-312.pyc
+ delete mode 100644 monsite/__pycache__/wsgi.cpython-312.pyc
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:Mariogit20/Chat_API_DJANGO_mario.git
+   44deed1..5782ea3  main -> main
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (main)
+$ git ls-files | findstr /i "__pycache__ .pyc"
+FINDSTR : Impossible d'ouvrir __pycache__ .pyc
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (main)
+$ git ls-files | grep -Ei "__pycache__|\.pyc$"
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (main)
+$ git ls-files | grep -Ei "(__pycache__|\.pyc$)" || echo "OK: aucun cache tracké"
+OK: aucun cache tracké
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (main)
+$ git check-ignore -v chat/__pycache__/consumers.cpython-312.pyc 2>/dev/null || echo "OK: pas de pyc présent / ou déjà ignoré"
+.gitignore:7:__pycache__/       chat/__pycache__/consumers.cpython-312.pyc
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (main)
+$ git status --ignored
+On branch main
+Ignored files:
+  (use "git add -f <file>..." to include in what will be committed)
+        .venv/
+        venv/
+
+nothing to commit, working tree clean
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (main)
+$ git rev-parse Dev
+git rev-parse main
+5782ea3ad6e5586afd308b07b4d603fe9006b5d6
+5782ea3ad6e5586afd308b07b4d603fe9006b5d6
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (main)
+$ git log --oneline --decorate --graph --all -5
+* 5782ea3 (HEAD -> main, origin/main, origin/Dev, Dev) Ignore Python cache files
+* 44deed1 Basculer les mp4 vers LFS
+* 10a58b3 Suivre les mp4 avec Git LFS
+* 70dd0be modif gitignore
+* 693373c second commit
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (main)
+$ git diff main..Dev
+
+AzureAD+SPSSE02MEN@DESKTOP-S95K8U0 MINGW64 /d/PYTHON DJANGO HOPES/github15/Chat_API_DJANGO_mario (main)
+$
